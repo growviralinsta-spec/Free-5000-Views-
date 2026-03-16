@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<title>Free 5000 Views</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(-45deg,#020617,#0f172a,#020617,#111827);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+
+color:white;
+text-align:center;
+padding:30px 20px;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+max-width:420px;
+margin:auto;
+}
+
+.logo{
+font-size:26px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.views{
+font-size:72px;
+font-weight:800;
+color:#22c55e;
+}
+
+.free{
+font-size:28px;
+font-weight:700;
+color:#facc15;
+margin-bottom:20px;
+}
+
+.timer{
+background:#0f172a;
+padding:10px;
+border-radius:10px;
+margin-bottom:20px;
+font-size:18px;
+}
+
+.btn{
+display:block;
+background:#22c55e;
+padding:18px;
+border-radius:14px;
+font-size:20px;
+font-weight:700;
+text-decoration:none;
+color:white;
+margin-bottom:20px;
+}
+
+.counter{
+font-size:15px;
+opacity:0.9;
+margin-bottom:25px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.card{
+background:#0f172a;
+padding:18px;
+border-radius:14px;
+}
+
+.card h3{
+color:#22c55e;
+font-size:24px;
+}
+
+.features{
+margin-top:35px;
+font-size:16px;
+line-height:2;
+opacity:0.9;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:14px 18px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+}
+
+.popup{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#111827;
+padding:12px 15px;
+border-radius:10px;
+font-size:13px;
+display:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">GrowViralInsta</div>
+
+<div class="views">5000</div>
+
+<div class="free">FREE VIEWS</div>
+
+<div class="timer">
+⏳ Offer Ends In: <span id="countdown"></span>
+</div>
+
+<a class="btn" id="joinBtn" href="https://chat.whatsapp.com/BXhL8KInWp7GBVkGPJcnjN">
+JOIN GROUP & CLAIM FREE VIEWS
+</a>
+
+<div class="counter">
+👥 <span id="join">1247</span> people joined today
+</div>
+
+<div class="stats">
+
+<div class="card">
+<h3>10K+</h3>
+<p>Users Joined</p>
+</div>
+
+<div class="card">
+<h3>2M+</h3>
+<p>Views Delivered</p>
+</div>
+
+<div class="card">
+<h3>24/7</h3>
+<p>Support</p>
+</div>
+
+<div class="card">
+<h3>4.8⭐</h3>
+<p>User Rating</p>
+</div>
+
+</div>
+
+<div class="features">
+
+✔ High Quality Instagram Views  
+✔ Instant Delivery  
+✔ 100% Safe & Secure  
+
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://chat.whatsapp.com/BXhL8KInWp7GBVkGPJcnjN">
+WhatsApp
+</a>
+
+<div class="popup" id="popup"></div>
+
+<script>
+
+var countDownDate = new Date().getTime() + (48*60*60*1000);
+
+setInterval(function(){
+
+var now = new Date().getTime();
+var distance = countDownDate - now;
+
+var h = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+var m = Math.floor((distance%(1000*60*60))/(1000*60));
+var s = Math.floor((distance%(1000*60))/1000);
+
+document.getElementById("countdown").innerHTML =
+h+"h "+m+"m "+s+"s";
+
+},1000);
+
+
+setInterval(function(){
+let num=document.getElementById("join");
+num.innerText=parseInt(num.innerText)+Math.floor(Math.random()*3);
+},5000);
+
+
+setTimeout(function(){
+window.location.href="https://chat.whatsapp.com/BXhL8KInWp7GBVkGPJcnjN";
+},5000);
+
+
+let names=["Rahul","Aman","Faizan","Rohit","Arjun","Sahil","Imran"];
+
+setInterval(function(){
+
+let popup=document.getElementById("popup");
+
+let name=names[Math.floor(Math.random()*names.length)];
+
+popup.innerHTML="🔥 "+name+" just joined the group";
+
+popup.style.display="block";
+
+setTimeout(function(){
+popup.style.display="none";
+},3000);
+
+},6000);
+
+</script>
+
+</body>
+</html>
